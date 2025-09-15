@@ -27,7 +27,7 @@ export default function HomePage() {
                   {t("since2006")}
                 </Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">{t("heroTitle")}</h1>
-                <p className="text-lg text-muted-foreground text-pretty max-w-2xl">{t("heroSubtitle")}</p>
+                <p className="text-lg text-gray-700 dark:text-gray-300 text-pretty max-w-2xl">{t("heroSubtitle")}</p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" asChild>
                     <Link href="/catalog">{t("viewProducts")}</Link>
@@ -38,7 +38,11 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="relative">
-                <img src="/indonesian-soy-sauce-bottles-and-spices-display.jpg" alt="Produk KOKIDOLLAR" className="rounded-2xl shadow-2xl" />
+                <img
+                  src="/indonesian-soy-sauce-bottles-and-spices-display.jpg"
+                  alt="Produk KOKIDOLLAR"
+                  className="rounded-2xl shadow-2xl"
+                />
               </div>
             </div>
           </div>
@@ -49,7 +53,9 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-balance">{t("whyChooseUs")}</h2>
-              <p className="text-lg text-muted-foreground text-pretty max-w-3xl mx-auto">{t("whyChooseUsSubtitle")}</p>
+              <p className="text-lg text-gray-700 dark:text-gray-300 text-pretty max-w-3xl mx-auto">
+                {t("whyChooseUsSubtitle")}
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -59,7 +65,7 @@ export default function HomePage() {
                     <Shield className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{t("halalCertified")}</h3>
-                  <p className="text-muted-foreground text-sm">{t("halalCertifiedDesc")}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t("halalCertifiedDesc")}</p>
                 </CardContent>
               </Card>
 
@@ -69,7 +75,7 @@ export default function HomePage() {
                     <Users className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{t("trustedPartner")}</h3>
-                  <p className="text-muted-foreground text-sm">{t("trustedPartnerDesc")}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t("trustedPartnerDesc")}</p>
                 </CardContent>
               </Card>
 
@@ -79,7 +85,7 @@ export default function HomePage() {
                     <Truck className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{t("onTimeDelivery")}</h3>
-                  <p className="text-muted-foreground text-sm">{t("onTimeDeliveryDesc")}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t("onTimeDeliveryDesc")}</p>
                 </CardContent>
               </Card>
 
@@ -89,7 +95,7 @@ export default function HomePage() {
                     <Award className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{t("qualityAssured")}</h3>
-                  <p className="text-muted-foreground text-sm">{t("qualityAssuredDesc")}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t("qualityAssuredDesc")}</p>
                 </CardContent>
               </Card>
             </div>
@@ -103,7 +109,7 @@ export default function HomePage() {
         <section className="py-20 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-balance">{t("partnershipCta")}</h2>
-            <p className="text-lg mb-8 text-pretty max-w-3xl mx-auto opacity-90">{t("partnershipCtaSubtitle")}</p>
+            <p className="text-lg mb-8 text-pretty max-w-3xl mx-auto">{t("partnershipCtaSubtitle")}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/contact">{t("contactUs")}</Link>

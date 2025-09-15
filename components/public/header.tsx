@@ -52,7 +52,7 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex flex-col">
               <span className="text-xl font-bold text-primary">UD. SEHATI</span>
-              <span className="text-xs text-muted-foreground">KOKIDOLLAR</span>
+              <span className="text-xs text-gray-600 dark:text-gray-400">KOKIDOLLAR</span>
             </div>
           </Link>
 

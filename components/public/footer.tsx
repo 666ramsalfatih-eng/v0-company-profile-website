@@ -19,10 +19,10 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">UD. SEHATI</h3>
-                <p className="text-sm opacity-90">KOKIDOLLAR</p>
+                <p className="text-sm">KOKIDOLLAR</p>
               </div>
             </div>
-            <p className="text-sm opacity-80 leading-relaxed">
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
               Produsen bumbu masakan dan kecap berkualitas tinggi sejak 2006. Mitra terpercaya UMKM di seluruh
               Indonesia.
             </p>
@@ -32,19 +32,34 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold">{t("quickLinks")}</h4>
             <nav className="flex flex-col space-y-2">
-              <Link href="/about" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <Link
+                href="/about"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-foreground transition-colors"
+              >
                 Tentang Kami
               </Link>
-              <Link href="/catalog" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <Link
+                href="/catalog"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-foreground transition-colors"
+              >
                 Katalog Produk
               </Link>
-              <Link href="/gallery" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <Link
+                href="/gallery"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-foreground transition-colors"
+              >
                 Galeri
               </Link>
-              <Link href="/blog" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <Link
+                href="/blog"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-foreground transition-colors"
+              >
                 Blog
               </Link>
-              <Link href="/contact" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+              <Link
+                href="/contact"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-foreground transition-colors"
+              >
                 {t("contact")}
               </Link>
             </nav>
@@ -57,17 +72,17 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <p className="text-sm opacity-80">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
                   Jl. MT. Haryono Gg. Kembang No. 66, Desa Kedungwaru, Kec. Kedungwaru, Kab. Tulungagung
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <p className="text-sm opacity-80">(0355) 5237256</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">(0355) 5237256</p>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <p className="text-sm opacity-80">kokidollarsehati@yahoo.co.id</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">kokidollarsehati@yahoo.co.id</p>
               </div>
             </div>
           </div>
@@ -79,7 +94,7 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
-                <div className="text-sm opacity-80">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
                   <p>{t("mondayFriday")}</p>
                   <p>{t("saturday")}</p>
                   <p>{t("sunday")}</p>
@@ -90,7 +105,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-sm opacity-80">{t("footerCopyright")}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">{t("footerCopyright")}</p>
         </div>
       </div>
     </footer>
